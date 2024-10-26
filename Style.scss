@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --c-darkblue:#1F314F;
+    --c-gray:#68778D;
+    --c-wgray:#D5E1EF;
+    --c-white:#FFFFFF;
+    --f-preset1:22px;
+    --f-preset2:clamp(0.682rem, 0.57rem + 0.657vi, 1rem) ;
+  }
+body{
+    background-color: var(--c-wgray);
+}
+.card_frame{
+    position: absolute;
+    top: 50%;
+    height: 500px;
+    width: 319px;
+    padding: 15px;
+    background-color: var(--c-white);
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.0476518);
+    border-radius: 20px;
+
+}
+.card_text{
+    padding-top: 20px;
+    text-align: center;
+    display: grid;
+    gap: 16px;
+    h1{
+        text-align: center;
+        font-size: var(--f-preset1);
+        font-weight: bold;
+        color: var(--c-darkblue);
+    }
+    p{
+        font-size: var(--f-preset2);
+        color: var(--c-gray);
+        line-height: 140%;
+    }
+}
